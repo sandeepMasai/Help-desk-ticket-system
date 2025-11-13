@@ -1,0 +1,146 @@
+.ticket-detail {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  gap: 30px;
+}
+
+.ticket-main {
+  min-width: 0;
+}
+
+.ticket-header-detail {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 24px;
+  gap: 20px;
+}
+
+.ticket-title-detail {
+  font-size: 28px;
+  font-weight: 700;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.ticket-meta {
+  display: flex;
+  gap: 16px;
+  flex-wrap: wrap;
+}
+
+.ticket-id-detail {
+  color: #4f46e5;
+  font-weight: 600;
+}
+
+.ticket-date-detail {
+  color: #6b7280;
+  font-size: 14px;
+}
+
+.ticket-badges-detail {
+  display: flex;
+  gap: 8px;
+  flex-shrink: 0;
+}
+
+.ticket-description-detail {
+  margin-bottom: 24px;
+}
+
+.ticket-description-detail h3 {
+  font-size: 18px;
+  font-weight: 600;
+  color: #111827;
+  margin-bottom: 12px;
+}
+
+.ticket-description-detail p {
+  color: #374151;
+  line-height: 1.8;
+  font-size: 16px;
+}
+
+.admin-actions {
+  margin-top: 32px;
+  padding-top: 32px;
+  border-top: 1px solid #e5e7eb;
+}
+
+.status-buttons,
+.priority-buttons {
+  display: flex;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.ticket-history {
+  min-width: 0;
+}
+
+.history-list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.history-item {
+  padding: 16px;
+  background-color: #f9fafb;
+  border-radius: 6px;
+  border-left: 3px solid #4f46e5;
+}
+
+.history-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 8px;
+  flex-wrap: wrap;
+}
+
+.history-date {
+  font-weight: 600;
+  color: #374151;
+  font-size: 14px;
+}
+
+.history-note {
+  color: #6b7280;
+  margin: 8px 0;
+  line-height: 1.6;
+}
+
+.history-user {
+  font-size: 12px;
+  color: #9ca3af;
+  margin-top: 8px;
+}
+
+@media (max-width: 968px) {
+  .ticket-detail {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 768px) {
+  .ticket-header-detail {
+    flex-direction: column;
+  }
+
+  .ticket-badges-detail {
+    align-self: flex-start;
+  }
+
+  .status-buttons,
+  .priority-buttons {
+    flex-direction: column;
+  }
+
+  .status-buttons .btn,
+  .priority-buttons .btn {
+    width: 100%;
+  }
+}
+
